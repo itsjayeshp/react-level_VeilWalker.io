@@ -1,0 +1,90 @@
+/* ==============================================
+   GLOBAL STYLES
+   Base styles for the entire application
+   ============================================== */
+
+/* Body styles - sets up the overall page appearance */
+body {
+  font-family: Arial, sans-serif;
+  /* Clean, readable font */
+  background: #f2f2f2;
+  /* Light gray background */
+  margin: 0;
+  /* Remove default margin */
+  padding: 20px;
+  /* Add breathing room */
+}
+
+/* ==============================================
+   LAYOUT
+   Main container for centering content
+   ============================================== */
+
+/* Container - centers and constrains content width */
+.container {
+  max-width: 600px;
+  /* Limit width for better readability */
+  margin: auto;
+  /* Center horizontally */
+}
+
+/* ==============================================
+   COMPONENTS
+   Card component for visual grouping
+   ============================================== */
+
+/* Card - white box with shadow for visual separation */
+.card {
+  background: white;
+  /* White background */
+  padding: 15px;
+  /* Inner spacing */
+  border-radius: 10px;
+  /* Rounded corners */
+  margin: 20px 0;
+  /* Vertical spacing between cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+/* ==============================================
+   FORM ELEMENTS
+   Input and button styling
+   ============================================== */
+
+/* Input field styles */
+input {
+  width: 100%;
+  /* Full width of container */
+  padding: 10px;
+  /* Inner spacing for better touch targets */
+  font-size: 16px;
+  /* Readable text size (also prevents zoom on iOS) */
+}
+
+/* ==============================================
+   BUTTONS
+   Button styling and hover effects
+   ============================================== */
+
+/* Primary button styles */
+button {
+  padding: 10px 15px;
+  /* Button padding */
+  background: #007bff;
+  /* Primary blue color */
+  color: white;
+  /* White text */
+  border: none;
+  /* Remove default border */
+  cursor: pointer;
+  /* Show pointer cursor */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+/* Button hover effect */
+button:hover {
+  background: #0056b3;
+  /* Darker blue on hover for feedback */
+}

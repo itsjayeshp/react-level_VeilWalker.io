@@ -1,0 +1,210 @@
+/* ==============================================
+   APP LAYOUT STYLES
+   Main application container and layout
+   ============================================== */
+
+/* Main app container - centers content with max width */
+.App {
+  max-width: 600px;
+  /* Limit width for better readability */
+  margin: 0 auto;
+  /* Center horizontally */
+  padding: 20px;
+  /* Inner spacing */
+  font-family: Arial, sans-serif;
+}
+
+/* ==============================================
+   CURRENCY CONVERTER COMPONENT
+   Main converter container styling
+   ============================================== */
+
+/* Converter card with shadow for depth */
+.currency-converter {
+  background: #f5f5f5;
+  /* Light gray background */
+  padding: 20px;
+  /* Inner spacing */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for elevation */
+}
+
+/* ==============================================
+   INPUT SECTIONS
+   Amount input and currency selector styles
+   ============================================== */
+
+/* Container for converter inputs */
+.converter-inputs {
+  margin-bottom: 20px;
+  /* Space below inputs */
+}
+
+/* Individual input group wrapper */
+.input-group {
+  position: relative;
+  /* For absolute positioning of currency symbol */
+  margin-bottom: 15px;
+  /* Space between input groups */
+}
+
+/* Amount input field */
+.amount-input {
+  width: 100%;
+  /* Full width of container */
+  padding: 10px 40px 10px 10px;
+  /* Extra right padding for currency symbol */
+  border: 1px solid #ddd;
+  /* Light border */
+  border-radius: 4px;
+  /* Slightly rounded corners */
+  font-size: 16px;
+  /* Readable text size */
+}
+
+/* Currency symbol displayed inside input */
+.currency-symbol {
+  position: absolute;
+  /* Position relative to .input-group */
+  right: 10px;
+  /* Align to right edge */
+  top: 50%;
+  /* Vertical center */
+  transform: translateY(-50%);
+  /* Offset for true centering */
+  color: #666;
+  /* Gray color */
+}
+
+/* ==============================================
+   CURRENCY SELECTORS
+   Dropdown selectors for choosing currencies
+   ============================================== */
+
+/* Flexbox container for currency selectors and swap button */
+.currency-selectors {
+  display: flex;
+  /* Flexbox layout */
+  align-items: center;
+  /* Vertically center items */
+  gap: 10px;
+  /* Space between items */
+}
+
+/* Individual currency selector container */
+.currency-selector {
+  flex: 1;
+  /* Equal width for both selectors */
+}
+
+/* Dropdown select element */
+.currency-selector__select {
+  width: 100%;
+  /* Full width */
+  padding: 10px;
+  /* Inner spacing */
+  border: 1px solid #ddd;
+  /* Light border */
+  border-radius: 4px;
+  /* Rounded corners */
+  font-size: 14px;
+  /* Smaller text than input */
+}
+
+/* ==============================================
+   SWAP BUTTON
+   Button to swap between currencies
+   ============================================== */
+
+/* Button to swap from/to currencies */
+.swap-button {
+  padding: 10px 15px;
+  /* Button spacing */
+  background: #007bff;
+  /* Primary blue color */
+  color: white;
+  /* White text */
+  border: none;
+  /* Remove default border */
+  border-radius: 4px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  font-size: 16px;
+  /* Readable text size */
+}
+
+/* Hover state for swap button */
+.swap-button:hover {
+  background: #0056b3;
+  /* Darker blue on hover */
+}
+
+/* ==============================================
+   CONVERSION RESULT DISPLAY
+   Shows the converted amount
+   ============================================== */
+
+/* Container for conversion result */
+.conversion-result {
+  margin: 20px 0;
+  /* Vertical spacing */
+  padding: 15px;
+  /* Inner spacing */
+  background: white;
+  /* White background for contrast */
+  border-radius: 4px;
+  /* Rounded corners */
+  text-align: center;
+  /* Center text */
+}
+
+/* Large result display */
+.result {
+  font-size: 24px;
+  /* Large, prominent text */
+  color: #28a745;
+  /* Success green color */
+}
+
+/* ==============================================
+   EXCHANGE RATE INFORMATION
+   Displays current exchange rate details
+   ============================================== */
+
+/* Main exchange rate text */
+.exchange-rate {
+  text-align: center;
+  /* Center text */
+  color: #666;
+  /* Gray color */
+  font-size: 14px;
+  /* Smaller text */
+}
+
+/* Inverse rate (smaller, lighter) */
+.exchange-rate__inverse {
+  font-size: 12px;
+  /* Small text */
+  color: #999;
+  /* Lighter gray */
+}
+
+/* ==============================================
+   STATE INDICATORS
+   Loading and error state styles
+   ============================================== */
+
+/* Loading state text */
+.loading {
+  color: #007bff;
+  /* Blue for loading */
+}
+
+/* Error state text */
+.error {
+  color: #dc3545;
+  /* Red for errors */
+}
